@@ -25,10 +25,19 @@ basev:District a rdfs:Class ;
     rdfs:label "District"@en ;
     rdfs:comment "Represents a District inside a state"@en .
 
+basev:City a rdfs:Class ;
+    rdfs:label "City"@en ;
+    rdfs:comment "Represents a City inside a District"@en .
+
 basev:district a rdf:Property ;
     rdfs:label "district"@en ;
     rdfs:domain basev:State ;
     rdfs:range basev:District .
+
+basev:city a rdf:Property ;
+    rdfs:label "city"@en ;
+    rdfs:domain basev:District ;
+    rdfs:range basev:City .
 
 #### 
 basev:Karnataka a rdfs:Class ;
@@ -48,3 +57,15 @@ basev:Chennai a rdfs:Class ;
 
 basev:Hosur a rdfs:Class ;
     rdfs:subclassOf basev:District  .
+
+basev:Banashankari a rdfs:Class ;
+    rdfs:subclassOf basev:City  .
+
+basev:TNagar a rdfs:Class ;
+    rdfs:subclassOf basev:City  .
+
+basev:PalaceRoad a rdfs:Class ;
+    rdfs:subclassOf basev:City  .
+
+basev:HillRoad a rdfs:Class ;
+    rdfs:subclassOf basev:City  .
