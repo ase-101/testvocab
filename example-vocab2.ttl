@@ -1,4 +1,4 @@
-@prefix ex: <https://raw.githubusercontent.com/ase-101/testvocab/main/example-vocab2.ttl#> .
+@prefix ex: <https://raw.githubusercontent.com/ase-101/testvocab/main/example-vocab.ttl#> .
 @prefix ex2: <https://raw.githubusercontent.com/ase-101/testvocab/main/example-vocab2.ttl#> .
 
 ex2:India a ex:Country .
